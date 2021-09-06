@@ -8,7 +8,7 @@ metadata:
   generation: 27
   labels:
     cattle.io/creator: norman
-    workload.user.cattle.io/workloadselector: deployment-onsite360-dev1-go-onsite-alert
+    
   managedFields:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
@@ -140,7 +140,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: deployment-onsite360-dev1-go-onsite-alert
+      workload.user.cattle.io/workloadselector: deployment-onsite360-poc-cd-go-onsite-alert
   strategy:
     rollingUpdate:
       maxSurge: 1
