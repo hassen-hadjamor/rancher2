@@ -9,4 +9,5 @@ metadata:
   labels:
     cattle.io/creator: norman
     source: github
-  name: myjson-configmap
+  #name: myjson-configmap
+  name : my-clone-config
