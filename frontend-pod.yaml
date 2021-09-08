@@ -4,9 +4,9 @@ metadata:
   name: frontend
 spec:
   containers:
-#    - name: test-container
-#      image: k8s.gcr.io/busybox
-#      command: [ "/bin/sh", "-c", "ls /etc/config/" ]
+    - name: test-container
+      image: k8s.gcr.io/busybox
+      command: [ "/bin/sh", "-c", "ls /etc/config/" ]
       volumeMounts:
       - name: config-volume
         mountPath: /etc/config
