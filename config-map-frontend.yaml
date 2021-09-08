@@ -1,15 +1,15 @@
-apiVersion: v1
-data:
-  var1: val1
-  var2: val2
-kind: ConfigMap
-metadata:
-  annotations:
-    field.cattle.io/creatorId: u-wf5pt2z7o4
-  creationTimestamp: "2021-09-06T15:27:53Z"
-  labels:
-    cattle.io/creator: norman
-  name: myconfig-map
-  namespace: poc-cd
-  resourceVersion: "40394751"
-  uid: 13b2f886-99bc-4bd1-8326-59c781bf1f63
+#apiVersion: v1
+#data:
+#  var1: val1
+#  var2: val2
+#kind: ConfigMap
+#metadata:
+#  annotations:
+#    field.cattle.io/creatorId: u-wf5pt2z7o4
+#  creationTimestamp: "2021-09-06T15:27:53Z"
+#  labels:
+#    cattle.io/creator: norman
+#  name: myconfig-map
+#  namespace: poc-cd
+#  resourceVersion: "40394751"
+# uid: 13b2f886-99bc-4bd1-8326-59c781bf1f63
