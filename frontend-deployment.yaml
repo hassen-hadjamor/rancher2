@@ -21,14 +21,14 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
-      - configMap:
-         defaultMode: 256
-         name: myconfig-map2
-         optional: false
-        name: vol1
-        volumeMounts:
-        - name: vol1
-          mountPath: /etc/myconfig
+#      - configMap:
+#         defaultMode: 256
+#         name: myconfig-map2
+#         optional: false
+#        name: vol1
+#        volumeMounts:
+#        - name: vol1
+#          mountPath: /etc/myconfig
         
         ports:
         - containerPort: 80
