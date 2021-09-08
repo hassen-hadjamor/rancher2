@@ -7,7 +7,7 @@ spec:
     - name: frontend-pod
       image: k8s.gcr.io/busybox
       #image: gcr.io/google-samples/gb-frontend:v4
-      command: [ "/bin/sh", "-c", "ls /etc/myconfig/" ]
+      command: [ "/bin/sh", "-c", "ls /etc/config/" ]
       volumeMounts:
       - name: config-volume
         mountPath: /etc/config
