@@ -24,6 +24,7 @@ spec:
         - mountPath: /go/config
           name: config
       volumes:
-        - configMap:
-           name: myconfig-map2
-          name: config
+      - configMap:
+          name: myconfig-map2
+          optional: false
+         name: config
