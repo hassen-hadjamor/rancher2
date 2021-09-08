@@ -4,7 +4,7 @@ metadata:
   name: go-onsite-alert
 spec:
   containers:
-  - name: go-onsite-alert
+  - name: onsite-alert
     image: registry-dkr.pvcp.intra:5000/pda/go-onsite-alert:develop-10daf607
     ports:
     - containerPort: 8000
