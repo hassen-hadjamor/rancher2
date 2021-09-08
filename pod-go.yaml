@@ -14,4 +14,4 @@ spec:
   volumes:
     - name: config
       configMap:
-        name: myconfig-map2
+        name: my-clone-config
