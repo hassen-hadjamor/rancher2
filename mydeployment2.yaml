@@ -18,8 +18,8 @@ spec:
       - name: go-onsite-alert
         image: registry-dkr.pvcp.intra:5000/pda/go-onsite-alert:develop-10daf607
         imagePullPolicy: Always
-        resources:
-          requests: {}
+#        resources:
+#          requests: {}
         volumeMounts:
         - mountPath: /go/config
           name: config
