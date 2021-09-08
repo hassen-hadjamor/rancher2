@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  config.json: <%= File.read('sf-onsite-arrangement-vhost.json').inspect %>
+  
+kind: ConfigMap
+metadata:
+  annotations:
+    field.cattle.io/creatorId: u-wf5pt2z7o4
+  creationTimestamp: "2021-09-06T15:27:53Z"
+  labels:
+    cattle.io/creator: norman
+  name: myvhost-configmap
