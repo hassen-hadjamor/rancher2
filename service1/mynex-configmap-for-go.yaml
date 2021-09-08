@@ -1,6 +1,42 @@
 apiVersion: v1
 data:
-  config.json: <%= File.read("/service1/config.json").inspect %> 
+  config.json: | 
+   {
+            "purgeHour": 4,
+             "mongo": {
+                "user": "root",
+                "password": "48M5c9FhoN",
+                "database": "onsite",
+                "args": "replicaset=rs0",
+                "url": [
+                   {
+                     "address": "onsite360-mongodb-0.onsite360-mongodb-headless.mongodb.svc.cluster.local",
+                     "port": "27017"
+                    },
+                {
+                  "address": "onsite360-mongodb-1.onsite360-mongodb-headless.mongodb.svc.cluster.local",
+                  "port": "27017"
+                },
+                {
+                "address": "onsite360-mongodb-2.onsite360-mongodb-headless.mongodb.svc.cluster.local",
+                "port": "27017"
+           }
+                     ]
+        },
+    "logs": {
+        "host": "http://172.18.16.49",
+        "port": "5000",
+        "username": "",
+        "password": ""
+    },
+    "auth": {
+    "username": "batch",
+    "password": "L3QhApL3",
+    "port": "8000",
+     "schemes": "http"
+     },
+   "env": "dev"
+   }
 kind: ConfigMap
 metadata:
   annotations:
