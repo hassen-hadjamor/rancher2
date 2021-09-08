@@ -4,7 +4,7 @@ metadata:
   name: frontend
 spec:
   containers:
-    - name: frontend-pod
+    - name: test-container
       image: k8s.gcr.io/busybox
       #image: gcr.io/google-samples/gb-frontend:v4
       command: [ "/bin/sh", "-c", "ls /etc/config/" ]
