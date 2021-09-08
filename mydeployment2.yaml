@@ -23,17 +23,17 @@ metadata:
 #      maxSurge: 1
 #      maxUnavailable: 0
 #    type: RollingUpdate
-  template:
-    metadata:
-      annotations:
-        cattle.io/timestamp: "2021-08-31T15:07:36Z"
-        field.cattle.io/ports: '[[{"containerPort":8000,"dnsName":"go-onsite-alert","hostPort":0,"kind":"ClusterIP","name":"go8000","protocol":"TCP","sourcePort":0}]]'
-      creationTimestamp: null
-      labels:
-        app: onsite360-dev
-        version: v1
-        workload.user.cattle.io/workloadselector: deployment-onsite360-dev1-go-onsite-alert
-    spec:
+#  template:
+#    metadata:
+#      annotations:
+#        cattle.io/timestamp: "2021-08-31T15:07:36Z"
+#        field.cattle.io/ports: '[[{"containerPort":8000,"dnsName":"go-onsite-alert","hostPort":0,"kind":"ClusterIP","name":"go8000","protocol":"TCP","sourcePort":0}]]'
+#      creationTimestamp: null
+#      labels:
+#        app: onsite360-dev
+#        version: v1
+#        workload.user.cattle.io/workloadselector: deployment-onsite360-dev1-go-onsite-alert
+#    spec:
       containers:
       - image: registry-dkr.pvcp.intra:5000/pda/go-onsite-alert:develop-10daf607
         imagePullPolicy: Always
