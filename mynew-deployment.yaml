@@ -20,5 +20,5 @@ spec:
       - name: go-onsite-alert
         image: registry-dkr.pvcp.intra:5000/pda/go-onsite-alert:develop-10daf607
         volumeMounts:
-        - mountPath: /tmp/config
+        - mountPath: /go/config/
           name: config-data-volume
