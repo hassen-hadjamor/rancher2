@@ -25,4 +25,4 @@ spec:
           name: config
         - configMap:
            name: myconfig-map2
-	  name: config
+          name: config
