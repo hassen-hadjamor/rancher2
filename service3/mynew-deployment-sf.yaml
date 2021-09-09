@@ -23,5 +23,5 @@ spec:
         image: registry-dkr.pvcp.intra:5000/pvcp/httpd:php-74-v20201215
         volumeMounts:
         - mountPath: /etc/httpd/vhosts.d
-          name: myvhost-configmap
+          name: config-vhost-volume
 
