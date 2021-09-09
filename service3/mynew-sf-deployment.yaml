@@ -33,17 +33,17 @@ spec:
         image: registry-dkr.pvcp.intra:5000/pda/sf-onsite-arrangement:develop-d6001185
         imagePullPolicy: Always
         name: src-sf-onsite-arrangement
-      volumes:
-      - name: sf-onsite-arrangement-src
-        persistentVolumeClaim:
-          claimName: sf-onsite-arrangement-src
-      - configMap:
-          defaultMode: 511
-          name: sf-onsite-arrangement-start
-          optional: false
-        name: startup
-        volumeMounts:
-        - mountPath: /tmp/data
-          name: sf-onsite-arrangement-src
-        - mountPath: /tmp/script
-          name: startup
+#      volumes:
+#      - name: sf-onsite-arrangement-src
+#        persistentVolumeClaim:
+#          claimName: sf-onsite-arrangement-src
+#      - configMap:
+#          defaultMode: 511
+#          name: sf-onsite-arrangement-start
+#          optional: false
+#        name: startup
+#        volumeMounts:
+#        - mountPath: /tmp/data
+#          name: sf-onsite-arrangement-src
+#        - mountPath: /tmp/script
+#          name: startup
