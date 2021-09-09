@@ -19,6 +19,9 @@ spec:
         - name: config-start-script
           configMap:
             name: myscript-configmap
+        - name: sf-onsite-arrangement-src
+          persistentVolumeClaim:
+            claimName: sf-onsite-arrangement-src
       containers:
       - name: sf-onsite-arrangement
         image: registry-dkr.pvcp.intra:5000/pvcp/httpd:php-74-v20201215
@@ -33,10 +36,10 @@ spec:
         image: registry-dkr.pvcp.intra:5000/pda/sf-onsite-arrangement:develop-d6001185
         imagePullPolicy: Always
         name: src-sf-onsite-arrangement
-      volumes:
-      - name: sf-onsite-arrangement-src
-        persistentVolumeClaim:
-          claimName: sf-onsite-arrangement-src
+#      volumes:
+#      - name: sf-onsite-arrangement-src
+#        persistentVolumeClaim:
+#          claimName: sf-onsite-arrangement-src
 #      - configMap:
 #          defaultMode: 511
 #          name: sf-onsite-arrangement-start
