@@ -35,5 +35,6 @@ metadata:
   creationTimestamp: "2021-09-06T15:27:53Z"
   labels:
     cattle.io/creator: norman
+    source: github
   name: myvhost-configmap
 
