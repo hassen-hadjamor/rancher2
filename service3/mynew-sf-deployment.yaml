@@ -17,6 +17,7 @@ spec:
           configMap:
             name: myvhost-configmap
           name: config-start-script
+          configMap:
             name: myscript-configmap
       containers:
       - name: sf-onsite-arrangement
