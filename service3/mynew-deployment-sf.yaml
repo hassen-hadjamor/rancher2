@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf-onsite-arrangement
+spec:
+  selector:
+    matchLabels:
+      app: sf-onsite-arrangement
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sf-onsite-arrangement
+    spec:
+      volumes:
+        - name: config-vhost-volume
+          configMap:
+            name: myvhost-configmap
+        - name: config-start-script
+            name: myscript-configmap
+      containers:
+      - name: sf-onsite-arrangement
+        image: registry-dkr.pvcp.intra:5000/pvcp/httpd:php-74-v20201215
+        volumeMounts:
+        - mountPath: /etc/httpd/vhosts.d
+          name: myvhost-configmap
+
