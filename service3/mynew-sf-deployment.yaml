@@ -16,7 +16,7 @@ spec:
         - name: config-vhost-volume
           configMap:
             name: myvhost-configmap
-          name: config-start-script
+        - name: config-start-script
           configMap:
             name: myscript-configmap
       containers:
