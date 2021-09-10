@@ -1,6 +1,8 @@
 apiVersion: v1
 data:
-  start.sh: "cp -r /var/www/sf-onsite-arrangement /tmp/data"
+  start.sh: |
+    rm -rf /tmp/data/*
+    cp -r /var/www/sf-onsite-arrangement /tmp/data
   
 kind: ConfigMap
 metadata:
