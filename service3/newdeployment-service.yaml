@@ -10,7 +10,7 @@ spec:
     # the port that this service should serve on
     - port: 80
       targetPort: 80
-      name: sf-onsite-arrangement-port
+      name: sf-onsite-arrangement
   # label keys and values that must match in order to receive traffic for this service
   selector: 
     app: sf-onsite-arrangement
