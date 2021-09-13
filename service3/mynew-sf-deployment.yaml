@@ -28,6 +28,8 @@ spec:
         volumeMounts:
         - mountPath: /etc/httpd/vhosts.d
           name: config-vhost-volume
+        - mountPath: /var/www/
+          name: sf-onsite-arrangement-src
 
       initContainers:
       - command:
@@ -45,8 +47,8 @@ spec:
 #          name: sf-onsite-arrangement-start
 #          optional: false
 #        name: startup
-#        volumeMounts:
-#        - mountPath: /tmp/data
-#          name: sf-onsite-arrangement-src
-#        - mountPath: /tmp/script
-#          name: startup
+        volumeMounts:
+        - mountPath: /tmp/data
+          name: sf-onsite-arrangement-src
+        - mountPath: /tmp/script
+          name: startup
