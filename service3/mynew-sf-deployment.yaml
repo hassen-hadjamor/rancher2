@@ -44,15 +44,6 @@ spec:
           readOnlyRootFilesystem: false                                                      
           runAsNonRoot: false                                                                                                                                                                  
           runAsUser: 0
-#      volumes:
-#      - name: sf-onsite-arrangement-src
-#        persistentVolumeClaim:
-#          claimName: sf-onsite-arrangement-src
-#      - configMap:
-#          defaultMode: 511
-#          name: sf-onsite-arrangement-start
-#          optional: false
-#        name: startup
         volumeMounts:
         - mountPath: /tmp/data
           name: sf-onsite-arrangement-src
