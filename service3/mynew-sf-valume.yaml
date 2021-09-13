@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: 	sf-onsite-arrangement-src
+  name: sf-onsite-arrangement-src
 spec:
   accessModes:
     - ReadWriteOnce
