@@ -38,7 +38,12 @@ spec:
         image: registry-dkr.pvcp.intra:5000/pda/sf-onsite-arrangement:develop-d6001185
         imagePullPolicy: Always
         name: src-sf-onsite-arrangement
-        user: 0
+        securityContext:                                                                         
+          allowPrivilegeEscalation: false                                                      
+          privileged: false              
+          readOnlyRootFilesystem: false                                                      
+          runAsNonRoot: false                                                                                                                                                                  
+          runAsUser: 0
 #      volumes:
 #      - name: sf-onsite-arrangement-src
 #        persistentVolumeClaim:
