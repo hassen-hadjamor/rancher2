@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: sf-onsite-arrangement
+        environment: dev
     spec:
       volumes:
         - name: config-vhost-volume
