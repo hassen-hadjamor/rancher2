@@ -6,13 +6,13 @@ spec:
   selector:
     matchLabels:
       app: sf-onsite-arrangement
-      environment: dev
+#      environment: dev
   replicas: 1
   template:
     metadata:
       labels:
         app: sf-onsite-arrangement
-        environment: dev
+ #       environment: dev
     spec:
       volumes:
         - name: config-vhost-volume
