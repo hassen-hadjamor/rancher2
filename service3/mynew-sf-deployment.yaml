@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: sf-onsite-arrangement
+      environment: dev
   replicas: 1
   template:
     metadata:
