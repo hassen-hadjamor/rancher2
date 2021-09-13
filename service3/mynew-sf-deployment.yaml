@@ -52,4 +52,4 @@ spec:
         - mountPath: /tmp/data
           name: sf-onsite-arrangement-src
         - mountPath: /tmp/script
-          name: sf-onsite-arrangement-src
+          name: config-start-script
